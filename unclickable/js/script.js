@@ -2,6 +2,7 @@ document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 
+let audio;
 
 const clickNo = document.getElementById('clickNo');
 clickNo.addEventListener('mouseover', moveHover)
@@ -18,7 +19,7 @@ popup = document.getElementById('popup');
 popupImpossible = document.getElementById('popup-impossible');
 
 function openPopup() {
-    const audioGay = new Audio('../audio/gay-meme.mp3');
+    audioGay = new Audio('../audio/gay-meme.mp3');
     audioGay.play();
     popup.classList.add('open-popup');
     popup.style.display = "block";
@@ -31,6 +32,10 @@ function openPopupImpossible() {
 
 function closePopup() {
     popup.classList.remove('open-popup');
+    if(audioGay){
+        audioGay.pause();
+        audioGay.currentTime = 0;
+    }
     popup.style.display = "none";
 }
 
