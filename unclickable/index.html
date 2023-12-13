@@ -7,6 +7,7 @@
     <title>Gay Checker</title>
     <!-- linking the css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fffa93f029.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="buttonDiv">
                 <div class="buttonDiv-div">
                     <div>
-                        <button class="clickYes">Yes</button>
+                        <button class="clickYes" onclick="openPopup()">Yes</button>
                     </div>
                     <div>
                         <button class="clickNo" id="clickNo">No</button>
@@ -25,6 +26,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <i class="fas fa-times" onclick="closePopup()"></i>
+        <img src="images/gay.jpeg" alt="gay">
+        <h3>I knew you were Gay...</h3>
+        <p>Thanks for saving the Women for Us!</p>
     </div>
 
     <!-- linking the js -->
