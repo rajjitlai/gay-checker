@@ -2,7 +2,7 @@ document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 
-let audio;
+
 
 const clickNo = document.getElementById('clickNo');
 clickNo.addEventListener('mouseover', moveHover)
@@ -26,6 +26,8 @@ function openPopup() {
 }
 
 function openPopupImpossible() {
+    audioStraight = new Audio('../audio/straight.mp3');
+    audioStraight.play();
     popupImpossible.classList.add('open-popup');
     popupImpossible.style.display = "block";
 }
@@ -41,5 +43,9 @@ function closePopup() {
 
 function closePopupImpossible() {
     popupImpossible.classList.remove('open-popup');
+    if(audioStraight){
+        audioStraight.pause();
+        audioStraight.currentTime = 0;
+    }
     popupImpossible.style.display = "none";
 }
