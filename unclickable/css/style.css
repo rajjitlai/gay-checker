@@ -19,7 +19,7 @@
 
 .card {
     width: 100%;
-    max-width: 440px;
+    max-width: 400px;
     color: #000;
     height: 30%;
     text-align: center;
@@ -63,6 +63,10 @@
     border-radius: 20px;
     font-weight: 600;
     font-size: 17px;
+}
+
+.clickNo{
+    z-index: 99;
 }
 
 .clickYes {
@@ -145,4 +149,5 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px;
+    z-index: 1;
 }

@@ -18,6 +18,8 @@ popup = document.getElementById('popup');
 popupImpossible = document.getElementById('popup-impossible');
 
 function openPopup() {
+    const audioGay = new Audio('../audio/gay-meme.mp3');
+    audioGay.play();
     popup.classList.add('open-popup');
     popup.style.display = "block";
 }
