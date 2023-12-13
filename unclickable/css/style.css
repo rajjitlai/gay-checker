@@ -137,21 +137,6 @@ button:hover {
     }
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fce6ff;
-    color: #000;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    z-index: 1;
-}
-
 .page-counterDiv{
     display: flex;
     justify-content: center;
