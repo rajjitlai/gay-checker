@@ -1,23 +1,78 @@
-.container{
-    width: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #fad2ff, #fa5bffec);
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.buttonDiv{
-    margin-top: 150px;
+.card {
+    width: 100%;
+    max-width: 440px;
+    color: #000;
+    height: 30%;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter may not work in some devices */
+    backdrop-filter: blur(5px);
 }
 
-button{
-    position: absolute;
+.card p {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.card p span{
+    color: #cd3de0;
+}
+
+.buttonDiv {
+    margin-top: 50px;
+}
+
+.buttonDiv-div {
+    position: relative;
     display: flex;
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 10px 30px;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.clickNo{
-    right: 50%;
+.clickYes, 
+.clickNo {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.clickYes{
+    left: 20%;
+}
+
+button:hover{
+    background: #fa5bffbd;
+    color: #fff;
+}
+
+.clickYes, 
+.clickNo {
+    position: absolute;
 }
