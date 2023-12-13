@@ -70,7 +70,7 @@
 }
 
 .clickYes {
-    left: 20%;
+    left: 10%;
 }
 
 button:hover {
@@ -150,4 +150,15 @@ footer {
     justify-content: center;
     padding: 10px;
     z-index: 1;
+}
+
+.page-counterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-counterDiv .cDImg{
+    position: absolute;
+    top: 15px;
 }
