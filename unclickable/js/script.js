@@ -15,11 +15,24 @@ function moveHover() {
 }
 
 popup = document.getElementById('popup');
+popupImpossible = document.getElementById('popup-impossible');
 
 function openPopup() {
     popup.classList.add('open-popup');
+    popup.style.display = "block";
+}
+
+function openPopupImpossible() {
+    popupImpossible.classList.add('open-popup');
+    popupImpossible.style.display = "block";
 }
 
 function closePopup() {
     popup.classList.remove('open-popup');
+    popup.style.display = "none";
+}
+
+function closePopupImpossible() {
+    popupImpossible.classList.remove('open-popup');
+    popupImpossible.style.display = "none";
 }

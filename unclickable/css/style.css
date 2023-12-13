@@ -89,7 +89,7 @@ button:hover {
     text-align: center;
     padding: 0 30px 30px;
     color: #000;
-    visibility: hidden;
+    display: none;
     transition: transform 0.4s, top 0.4s;
     border-radius: 10px;
 }

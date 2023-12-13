@@ -20,8 +20,8 @@
                     <div>
                         <button class="clickYes" onclick="openPopup()">Yes</button>
                     </div>
-                    <div>
-                        <button class="clickNo" id="clickNo">No</button>
+                    <div style="overflow: hidden;">
+                        <button class="clickNo" onclick="openPopupImpossible()" id="clickNo">No</button>
                     </div>
                 </div>
             </div>
@@ -33,6 +33,12 @@
         <img src="images/gay.jpeg" alt="gay">
         <h3>I knew you were Gay...</h3>
         <p>Thanks for saving the Women for Us!</p>
+    </div>
+    <div class="popup" id="popup-impossible">
+        <i class="fas fa-times" onclick="closePopupImpossible()"></i>
+        <img src="images/chad.jpg" alt="chad">
+        <h3>Damn, you did it bro...</h3>
+        <p>Welcome to the Straight Family</p>
     </div>
 
     <footer>
