@@ -1,6 +1,6 @@
-// document.addEventListener("contextmenu", function (e) {
-//     e.preventDefault();
-// });
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
 
 const clickNo = document.getElementById('clickNo');
 clickNo.addEventListener('mouseover', moveHover)
