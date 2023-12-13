@@ -1,0 +1,23 @@
+.container{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonDiv{
+    margin-top: 150px;
+}
+
+button{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 30px;
+}
+
+.clickNo{
+    right: 50%;
+}
