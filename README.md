@@ -20,6 +20,7 @@ If you have a hilarious prank idea or an improvement to an existing prank, feel 
 Remember, the goal is to spread joy and laughter, so always be considerate of others' feelings and preferences. Ensure that your pranks are harmless and well-received.
 
 ## License:
+[License](/License)
 
 
 ## Acknowledgments:
