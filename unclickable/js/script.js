@@ -2,7 +2,7 @@ document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 
-const buttonHeight = 50;
+const buttonHeight = 150;
 const buttonWidth = 150;
 
 const maxWidth = window.innerWidth - buttonWidth;
