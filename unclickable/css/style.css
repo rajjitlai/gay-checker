@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 400px;
     color: #000;
-    height: 40%;
+    height: 35%;
     text-align: center;
     padding: 50px 35px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,7 +54,7 @@
 }
 
 .clickYes {
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
