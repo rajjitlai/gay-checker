@@ -2,16 +2,19 @@ document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 
-const clickNo = document.getElementById('clickNo');
-clickNo.addEventListener('mouseover', moveHover)
+const buttonHeight = 50;
+const buttonWidth = 150;
 
-function moveHover() {
-    const first = Math.floor(Math.random() * 350) + 1;
-    const second = Math.floor(Math.random() * 350) + 1;
+const maxWidth = window.innerWidth - buttonWidth;
+const maxHeight = window.innerHeight - buttonHeight;
 
-    clickNo.style.left = first + "px";
-    clickNo.style.top = second + "px";
-}
+window.addEventListener('DOMContentLoaded', () => {
+    const clickNo = document.getElementById('clickNo');
+    clickNo.addEventListener('mouseover', () => {
+        clickNo.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+        clickNo.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+    });
+});
 
 popup = document.getElementById('popup');
 popupImpossible = document.getElementById('popup-impossible');
@@ -32,7 +35,7 @@ function openPopupImpossible() {
 
 function closePopup() {
     popup.classList.remove('open-popup');
-    if(audioGay){
+    if (audioGay) {
         audioGay.pause();
         audioGay.currentTime = 0;
     }
@@ -41,7 +44,7 @@ function closePopup() {
 
 function closePopupImpossible() {
     popupImpossible.classList.remove('open-popup');
-    if(audioStraight){
+    if (audioStraight) {
         audioStraight.pause();
         audioStraight.currentTime = 0;
     }

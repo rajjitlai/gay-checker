@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 400px;
     color: #000;
-    height: 30%;
+    height: 40%;
     text-align: center;
     padding: 50px 35px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -41,36 +41,28 @@
     color: #cd3de0;
 }
 
-.buttonDiv {
-    margin-top: 50px;
-}
-
-.buttonDiv-div {
-    position: relative;
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .clickYes,
-.clickNo,
-.closeButton {
+.clickNo{
     cursor: pointer;
     padding: 10px 30px;
     border: none;
     border-radius: 20px;
     font-weight: 600;
     font-size: 17px;
-}
-
-.clickNo{
-    z-index: 99;
+    position: absolute;
+    z-index: 1;
 }
 
 .clickYes {
-    left: 8%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clickNo {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 button:hover {
@@ -80,11 +72,6 @@ button:hover {
 
 .clickNo:hover {
     background: rgba(53, 144, 255, 0.867);
-}
-
-.clickYes,
-.clickNo {
-    position: absolute;
 }
 
 .popup {
@@ -97,6 +84,7 @@ button:hover {
     display: none;
     transition: transform 0.4s, top 0.4s;
     border-radius: 10px;
+    z-index: 10;
 }
 
 .open-popup {
